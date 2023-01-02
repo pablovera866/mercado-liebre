@@ -28,7 +28,7 @@
       <div class="padding-20 w-50 align-center">
         <form action="/" class="padding-8 display-flex radius-5 back-white">
           <input
-            class="flex-grow border-none outline-none font-18"
+            class="flex-grow border-none outline-none font-18 min-with-0"
             type="text"
             name="search"
             placeholder="Buscá productos por nombre, marcas o palabras clave"
@@ -71,6 +71,51 @@
         <i class="fa-solid fa-bars padding-8 back-blue radius-5 color-white bold"></i>
       </div>
     </header>
+
+    <form action="/registro" class="margin-19 display-flex flex-wrap align-center">
+      <input class="padding-8 w-100 margin-5 border-none height-30 radius-5 back-white" placeholder="Nombre y Apellido" type="text" name="nombre" id="nombre">
+
+      <input class="padding-8 w-100 margin-5 border-none height-30 radius-5 back-white" placeholder="Nombre de Usuari@" type="text" name="usuario" id="usuario">
+
+      <label  class="padding-8 w-100" for="fecha">Fecha de Nacimiento</label>
+      <input  class="padding-8 w-100 margin-5 border-none height-30 radius-5 back-white" type="date" name="fecha" id="fecha">
+
+      <input class="padding-8 w-100 margin-5 border-none height-30 radius-5 back-white"  placeholder="Domicilio" type="text" name="domicilio" id="domicilio">
+
+      <label  class="w-100 margin-5" for="perfil">Perfil de Usuario</label>
+      <input type="radio" value="comprar" name="perfil" id="perfil">
+      <label for="compra">Compra</label>
+
+      <input type="radio" value="vender" name="perfil" id="perfil">
+      <label for="vender">Venta</label>
+
+      <label  class="w-100 margin-5" for="interes">Categorías de Interés</label>
+      <input type="checkbox" value="electro" name="interes" id="interes">
+      <label for="electro">Electro</label>
+
+      <input type="checkbox" value="moda" name="interes" id="interes">
+      <label for="moda">Moda</label>
+
+      <input type="checkbox" value="hogar" name="interes" id="interes">
+      <label for="hogar">Hogar</label>
+
+      <input type="checkbox" value="jugueteria" name="interes" id="interes">
+      <label for="jugueteria">Jugueteria</label>
+
+      <input type="checkbox" value="vida-sana" name="interes" id="interes">
+      <label for="vida-sana">Vida Sana</label>
+
+      <label  class="w-100 margin-5" for="foto-usuario">Foto de Usuario</label>
+      <input class="margin-5" type="file" name="foto-usuario" accept=".jpg, .png">
+
+      <input placeholder="Contraseña" class="padding-8 w-100 margin-5 border-none height-30 radius-5 back-white" type="password" name="contrasena" id="contrasena">
+
+      <input placeholder="Confirmar Contraseña" class="padding-8 w-100 margin-5 border-none height-30 radius-5 back-white" type="password" name="conf-contrasena" id="conf-contrasena">
+      <div>
+      <button class="border-none back-white padding-8" type="reset">Cancelar</button>
+      <button class="border-none back-white padding-8" type="submit" href="/home">Enviar</button>
+    </div>
+    </form>
 
     <footer class="text-center">
         <i id="icons" class="fa-solid fa-credit-card"></i>
