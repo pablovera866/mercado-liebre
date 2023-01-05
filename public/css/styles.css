@@ -30,6 +30,7 @@ body {
 }
 .font-18 {
   font-size: 18px;
+  font-weight: bold;
 }
 
 .font-s {
@@ -56,6 +57,10 @@ body {
 
 .vw-90 {
   width: 90vw;
+}
+
+.w-60 {
+  width: 60%;
 }
 
 .w-100 {
@@ -96,7 +101,7 @@ body {
   color: white;
 }
 
-.text-center {
+.footer-div {
   text-align: center;
 }
 
@@ -109,6 +114,10 @@ body {
 }
 .padding-20 {
   padding: 20px;
+}
+
+.padding-t-10 {
+  padding-top: 10px;
 }
 
 .padding-t-b-8 {
@@ -146,14 +155,32 @@ body {
   margin: 5px 0;
 }
 
+.margin-10 {
+  margin: 0 10px;
+}
+
 .display-flex {
   display: flex;
+}
+
+.margin-5-b {
+  margin: 2px;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.flex-wrap-login {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .flex-grow {
@@ -222,39 +249,82 @@ body {
   font-size: 17px;
 }
 
+.fa-truck {
+  transition: 0.5s;
+}
+
+.oferta:hover .fa-truck {
+  transform: rotateZ(-30deg) translateX(5px);
+}
+
+.enviar-color:hover {
+  background-color: #0022aa;
+  color: white;
+}
+
 @media (min-width: 481px) {
   /* tablet */
   .md-w-50 {
     width: 48%;
   }
 
-  .burger-buttom {
-    display: none;
-  }
-
   .dolar-header {
     max-width: 350px;
     text-align: right;
-  }
-
-  .main-bar {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
 @media (min-width: 769px) {
   /* laptop */
+  .main-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .flex-wrap {
+    flex-wrap: nowrap;
+  }
+
+  .burger-buttom {
+    display: none;
+  }
+
   .product-shadow {
     box-shadow: none;
   }
 
+  .product-shadow:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
   .description {
-    display: none;
+    display: block;
+    opacity: 0;
+  }
+
+  article:hover .description {
+    display: flex;
+    opacity: 100%;
   }
 
   .lg-w-25 {
     width: 23%;
+  }
+
+  .footer-div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-between;
+    margin-bottom: 0px;
+  }
+
+  .w-30 {
+    width: 30%;
+  }
+
+  #icons:hover {
+    color: #0022aa;
   }
 }
 

@@ -21,14 +21,14 @@
   </head>
   <body class="back-grey">
     <header class="back-yellow padding-8">
-      <div class="align-center padding-20 display-flex flex-wrap">
-        <h1 class="w-50 padding-8">
+      <div class="align-center padding-20 display-flex flex-wrap justify-center">
+        <h1 class="w-40 padding-8">
           <img src="/images/logo-mercado-liebre.svg" alt="Logo ML" />
         </h1>
-          <form action="/" class="padding-8 w-50 display-flex radius-5 back-white">
+          <form action="/" class="padding-8 w-50 display-flex radius-5 back-white margin-19">
             <input
               class="flex-grow border-none outline-none font-18 min-with-0"
-              type="text"
+              type="search"
               name="search"
               placeholder="Buscá productos por nombre, marcas o palabras clave"
             />
@@ -36,7 +36,7 @@
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
-          <p class="dolar-header text-center w-100 margin-t-b-10">
+          <p class="dolar-header text-center margin-t-b-10 w-30">
             <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin
             tarjeta de crédito
           </p>
@@ -78,7 +78,7 @@
     <main class="padding-8 vw-90 margin-auto">
       <section class="padding-8 display-flex flex-wrap gap">
         <h2 class="title w-100">Basado en tu última visita</h2>
-        <article class="back-white margin-t-b-10 product-shadow w-100 md-w-50 lg-w-25">
+        <article class="back-white margin-t-b-10 product-shadow w-100 md-w-50 lg-w-25 oferta">
           <img class="w-100" src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex"/>
           <div class="border-1 padding-8 position-relative display-flex flex-wrap">
             <i class="fa-solid fa-truck truck-icon"></i>
@@ -87,7 +87,7 @@
             <h3 class="font-16 description w-100">Cafetera Moulinex</h3>
           </div>
         </article>
-        <article class="back-white margin-t-b-10 product-shadow w-100 md-w-50 lg-w-25">
+        <article class="back-white margin-t-b-10 product-shadow w-100 md-w-50 lg-w-25 oferta">
           <img class="w-100" src="/images/img-macbook-pro-2019.jpg" alt="Macbook Pro 2019"/>
           <div class="border-1 padding-8 position-relative display-flex flex-wrap">
             <i class="fa-solid fa-truck truck-icon"></i>
@@ -96,7 +96,7 @@
             <h3 class="font-16 description w-100">MacBook Pro 2019</h3>
           </div>
         </article>
-        <article class="back-white margin-t-b-10 product-shadow w-100 md-w-50 lg-w-25">
+        <article class="back-white margin-t-b-10 product-shadow w-100 md-w-50 lg-w-25 oferta">
           <img class="w-100" src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10"/>
           <div class="border-1 padding-8 position-relative display-flex flex-wrap">
             <i class="fa-solid fa-truck truck-icon"></i>
@@ -105,7 +105,7 @@
             <h3 class="font-16 description w-100">Samsung Galaxy S10</h3>
           </div>
         </article>
-        <article class="back-white margin-t-b-10 product-shadow w-100 md-w-50 lg-w-25">
+        <article class="back-white margin-t-b-10 product-shadow w-100 md-w-50 lg-w-25 oferta">
           <img
             class="w-100"
             src="/images/img-tv-samsung-smart.jpg"
@@ -121,7 +121,7 @@
       </section>
       <section class="padding-8 display-flex flex-wrap gap">
         <h2 class="title w-100">Ofertas</h2>
-        <article class="back-white margin-t-b-10 product-shadow w-100 md-w-50 lg-w-25">
+        <article class="back-white margin-t-b-10 product-shadow w-100 md-w-50 lg-w-25 oferta">
           <img
             class="w-100"
             src="/images/img-cafetera-moulinex.jpg"
@@ -134,7 +134,7 @@
             <h3 class="font-16 description w-100">Cafetera Moulinex</h3>
           </div>
         </article>
-        <article class="back-white margin-t-b-10 product-shadow w-100 md-w-50 lg-w-25">
+        <article class="back-white margin-t-b-10 product-shadow w-100 md-w-50 lg-w-25 oferta">
           <img
             class="w-100"
             src="/images/img-macbook-pro-2019.jpg"
@@ -147,7 +147,7 @@
             <h3 class="font-16 description w-100">MacBook Pro 2019</h3>
           </div>
         </article>
-        <article class="back-white margin-t-b-10 product-shadow w-100 md-w-50 lg-w-25">
+        <article class="back-white margin-t-b-10 product-shadow w-100 md-w-50 lg-w-25 oferta">
           <img
             class="w-100"
             src="/images/img-samsung-galaxy-s10.jpg"
@@ -160,7 +160,7 @@
             <h3 class="font-16 description w-100">Samsung Galaxy S10</h3>
           </div>
         </article>
-        <article class="back-white margin-t-b-10 product-shadow w-100 md-w-50 lg-w-25">
+        <article class="back-white margin-t-b-10 product-shadow w-100 md-w-50 lg-w-25 oferta">
           <img class="w-100" src="/images/img-tv-samsung-smart.jpg" alt="Samsung Galaxy S10"/>
           <div class="border-1 padding-8 position-relative display-flex flex-wrap">
             <i class="fa-solid fa-truck truck-icon"></i>
@@ -172,25 +172,33 @@
       </section>
     </main>
 
-    <footer class="text-center">
+    <footer class="footer-div text-center">
+      <div class="w-30">
       <i id="icons" class="fa-solid fa-credit-card"></i>
       <h3>Pagá con tarjeta o en efectivo</h3>
         Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo
         en puntos de pago. ¡Y siempre es seguro!
       </p>
+     </div>
+     <div class="w-30">
       <i id="icons" class="fa-solid fa-gift"></i>
       <h3>Envío gratis desde $ 2.500</h3>
       <p>
         Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles
         de productos. Es un beneficio de Mercado Puntos.
       </p>
+      </div>
+      <div class="w-30">
       <i id="icons" class="fa-solid fa-user-shield"></i>
       <h3>Seguridad, de principio a fin</h3>
       <p>
         ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
         hacer, porque estás siempre protegid@.
       </p>
+      </div>
+      <div class="w-100">
       <h5 class="font-s margin-20">Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>
+     </div>
     </footer>
   </body>
 </html>

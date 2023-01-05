@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mercado Liebre - Registro</title>
-
+    <meta name="viewport" content="width=device-width" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       rel="stylesheet"
@@ -18,124 +16,133 @@
     />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/styles.css" />
-  </head>
 
-    <body class="back-grey">
-    <header class="back-yellow padding-8 display-flex flex-wrap">
-      <h1 class="w-50">
-        <img src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre" />
-      </h1>
-      <div class="padding-20 w-50 align-center">
-        <form action="/" class="padding-8 display-flex radius-5 back-white">
-          <input
-            class="flex-grow border-none outline-none font-18 min-with-0"
-            type="text"
-            name="search"
-            placeholder="Buscá productos por nombre, marcas o palabras clave"
-          />
-          <button type="submit" class="back-white border-none">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
+    <title>Mercado Liebre</title>
+  </head>
+  <body class="back-grey">
+    <header class="back-yellow padding-8">
+      <div class="align-center padding-20 display-flex flex-wrap justify-center">
+        <h1 class="w-40 padding-8">
+          <img src="/images/logo-mercado-liebre.svg" href="/" alt="Logo ML" />
+        </h1>
+          <form action="/" class="padding-8 w-50 display-flex radius-5 back-white margin-19">
+            <input
+              class="flex-grow border-none outline-none font-18 min-with-0"
+              type="search"
+              name="search"
+              placeholder="Buscá productos por nombre, marcas o palabras clave"
+            />
+            <button type="submit" class="back-white border-none">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <p class="dolar-header text-center w-100 margin-t-b-10 w-30">
+            <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin
+            tarjeta de crédito
+          </p>
       </div>
-      <p class="text-center w-100 margin-t-b-10">
-        <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin
-        tarjeta de crédito
-      </p>
-      <nav class="hide">
-        <ul class="padding-t-b-8">
-          <li><a class="nav-link" href="#">Ofertas</a></li>
-          <li><a class="nav-link" href="#">Tiendas Oficiales</a></li>
-          <li><a class="nav-link" href="#">Vender</a></li>
-          <li><a class="nav-link" href="#">Ayuda</a></li>
-        </ul>
-        <ul class="padding-t-b-8">
-          <li>
-            <a class="nav-link" href="/register"
-              >Crea tu cuenta <i class="fa-solid fa-address-card"></i
-            ></a>
-          </li>
-          <li>
-            <a class="nav-link" href="#"
-              >Ingresá <i class="fa-solid fa-right-to-bracket"></i
-            ></a>
-          </li>
-          <li>
-            <a class="nav-link" href="#"
-              >Mis Compras <i class="fa-solid fa-basket-shopping"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-      <div class="text-center w-100">
-        <i class="fa-solid fa-bars padding-8 back-blue radius-5 color-white bold"></i>
-      </div>
+      <a href="#" class="burger-buttom">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+          <nav class="main-bar">
+            <ul class="left-navbar padding-t-b-8">
+              <li><a class="nav-link" href="#">Ofertas</a></li>
+              <li><a class="nav-link" href="#">Tiendas Oficiales</a></li>
+              <li><a class="nav-link" href="#">Vender</a></li>
+              <li><a class="nav-link" href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right-navbar padding-t-b-8">
+              <li>
+                <a class="nav-link" href="/register"
+                  >Crea tu cuenta <i class="fa-solid fa-address-card"></i
+                ></a>
+              </li>
+              <li>
+                <a class="nav-link" href="/login"
+                    >Ingresá <i class="fa-solid fa-right-to-bracket"></i></a>
+              </li>
+              <li>
+                <a class="nav-link" href="#"
+                  >Mis Compras <i class="fa-solid fa-basket-shopping"></i></a>
+              </li>
+            </ul>
+          </nav>
     </header>
 
-    <form action="/registro" class="margin-19 display-flex flex-wrap align-center">
+    <form action="/" class="w-100 display-flex flex-wrap-login align-center">
+      <div class="w-60 margin-19 display-flex flex-wrap-login align-center">
       <input class="padding-8 w-100 margin-5 border-none height-30 radius-5 back-white" placeholder="Nombre y Apellido" type="text" name="nombre" id="nombre">
 
       <input class="padding-8 w-100 margin-5 border-none height-30 radius-5 back-white" placeholder="Nombre de Usuari@" type="text" name="usuario" id="usuario">
 
-      <label  class="padding-8 w-100" for="fecha">Fecha de Nacimiento</label>
+      <label  class="padding-t-10 w-100 font-18" for="fecha">Fecha de Nacimiento</label>
       <input  class="padding-8 w-100 margin-5 border-none height-30 radius-5 back-white" type="date" name="fecha" id="fecha">
 
       <input class="padding-8 w-100 margin-5 border-none height-30 radius-5 back-white"  placeholder="Domicilio" type="text" name="domicilio" id="domicilio">
 
-      <label  class="w-100 margin-5" for="perfil">Perfil de Usuario</label>
+      <label  class="w-100 margin-5 padding-t-10 font-18" for="perfil">Perfil de Usuario</label>
       <input type="radio" value="comprar" name="perfil" id="perfil">
-      <label for="compra">Compra</label>
+      <label class="margin-10" for="comprar">Compra</label>
 
       <input type="radio" value="vender" name="perfil" id="perfil">
-      <label for="vender">Venta</label>
+      <label class= "margin-10" for="vender">Venta</label>
 
-      <label  class="w-100 margin-5" for="interes">Categorías de Interés</label>
+      <label  class="w-100 margin-5 padding-t-10 font-18" for="interes">Categorías de Interés</label>
       <input type="checkbox" value="electro" name="interes" id="interes">
-      <label for="electro">Electro</label>
+      <label class="margin-10"  for="electro">Electro</label>
 
       <input type="checkbox" value="moda" name="interes" id="interes">
-      <label for="moda">Moda</label>
+      <label class="margin-10"  for="moda">Moda</label>
 
       <input type="checkbox" value="hogar" name="interes" id="interes">
-      <label for="hogar">Hogar</label>
+      <label class="margin-10"  for="hogar">Hogar</label>
 
       <input type="checkbox" value="jugueteria" name="interes" id="interes">
-      <label for="jugueteria">Jugueteria</label>
+      <label class="margin-10"  for="jugueteria">Jugueteria</label>
 
       <input type="checkbox" value="vida-sana" name="interes" id="interes">
-      <label for="vida-sana">Vida Sana</label>
+      <label class="margin-10"  for="vida-sana">Vida Sana</label>
 
-      <label  class="w-100 margin-5" for="foto-usuario">Foto de Usuario</label>
+      <label  class="w-100 margin-5 padding-t-10 font-18" for="foto-usuario">Foto de Usuario</label>
       <input class="margin-5" type="file" name="foto-usuario" accept=".jpg, .png">
 
       <input placeholder="Contraseña" class="padding-8 w-100 margin-5 border-none height-30 radius-5 back-white" type="password" name="contrasena" id="contrasena">
 
       <input placeholder="Confirmar Contraseña" class="padding-8 w-100 margin-5 border-none height-30 radius-5 back-white" type="password" name="conf-contrasena" id="conf-contrasena">
-      <div>
-      <button class="border-none back-white padding-8" type="reset">Cancelar</button>
-      <button class="border-none back-white padding-8" type="submit" href="/home">Enviar</button>
-    </div>
+     </div>  
+     <div class="w-100 display-flex flex-wrap-login">
+      <button class="border-none back-white padding-8 margin-5-b" type="reset">Cancelar</button>
+      <button class="border-none back-white padding-8 margin-5-b" type="submit">Enviar</button>
+      </div>
     </form>
 
-    <footer class="text-center">
-        <i id="icons" class="fa-solid fa-credit-card"></i>
-        <h3>Pagá con tarjeta o en efectivo</h3>
-          Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo
-          en puntos de pago. ¡Y siempre es seguro!
-        </p>
-        <i id="icons" class="fa-solid fa-gift"></i>
-        <h3>Envío gratis desde $ 2.500</h3>
-        <p>
-          Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles
-          de productos. Es un beneficio de Mercado Puntos.
-        </p>
-        <i id="icons" class="fa-solid fa-user-shield"></i>
-        <h3>Seguridad, de principio a fin</h3>
-        <p>
-          ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
-          hacer, porque estás siempre protegid@.
-        </p>
-        <h5 class="font-s margin-20">Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>
-      </footer>
-    </body>
-  </html>
+    <footer class="footer-div text-center">
+      <div class="w-30">
+      <i id="icons" class="fa-solid fa-credit-card"></i>
+      <h3>Pagá con tarjeta o en efectivo</h3>
+        Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo
+        en puntos de pago. ¡Y siempre es seguro!
+      </p>
+     </div>
+     <div class="w-30">
+      <i id="icons" class="fa-solid fa-gift"></i>
+      <h3>Envío gratis desde $ 2.500</h3>
+      <p>
+        Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles
+        de productos. Es un beneficio de Mercado Puntos.
+      </p>
+      </div>
+      <div class="w-30">
+      <i id="icons" class="fa-solid fa-user-shield"></i>
+      <h3>Seguridad, de principio a fin</h3>
+      <p>
+        ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
+        hacer, porque estás siempre protegid@.
+      </p>
+      </div>
+      <div class="w-100">
+      <h5 class="font-s margin-20">Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>
+     </div>
+    </footer>
+  </body>
+</html>
